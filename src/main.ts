@@ -145,10 +145,6 @@ class Shop {
       order.customer.orders.push(order);
     }
   }
-
-  searchProducts(keyword: string): Product[] {
-    return this.products.filter((p) => p.name.toLowerCase().includes(keyword.toLowerCase()));
-  }
 }
 
 class Payment {
@@ -180,7 +176,7 @@ class Payment {
   }
 }
 
-const myShop = new Shop("Isroil's Store");
+const myShop = new Shop("Isroil Store");
 
 const iphone = new Product(1, "iPhone 15", 15000000, 10, ProductCategory.ELECTRONICS);
 const tshirt = new Product(2, "White T-shirt", 100000, 20, ProductCategory.CLOTHING);
