@@ -186,7 +186,7 @@ myShop.addProduct(iphone);
 myShop.addProduct(tshirt);
 myShop.addProduct(bread);
 
-const customer1 = new Customer(101, "Ali Valiyev", "ali@mail.com", "+998901234567");
+const customer1 = new Customer(101, "Marko", "mark@mail.com", "+998901234567");
 
 myShop.registerCustomer(customer1);
 
@@ -205,7 +205,7 @@ console.log("Buyurtma holati:", order1.orderStatus);
 
 const payment1 = new Payment(5001, order1, PaymentMethod.CARD, order1.calculateTotal());
 payment1.processPayment();
-console.log("To‘lov holati:", payment1.paymentStatus);
+console.log("To'lov holati:", payment1.paymentStatus);
 
 const receipt = payment1.generateReceipt();
 if (receipt) {
